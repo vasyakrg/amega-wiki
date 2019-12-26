@@ -2,7 +2,7 @@
 title: Общее по сети
 description: 
 published: true
-date: 2019-12-26T08:33:02.168Z
+date: 2019-12-26T08:50:25.392Z
 tags: 
 ---
 
@@ -46,7 +46,7 @@ tags:
 обычно видим что-то типа
 ```
 Trying 146.158.64.42...
-Connected to docker.vigroup.kz.
+Connected to docker.amegaserver.com.
 Escape character is '^]'.
 SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
 ```
