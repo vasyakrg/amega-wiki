@@ -2,7 +2,7 @@
 title: Свой k8s - ШАГ 1
 description: Минимум, что бы поднять свой k8s на коленке
 published: true
-date: 2019-12-28T06:48:49.594Z
+date: 2019-12-30T06:21:04.965Z
 tags: 
 ---
 
