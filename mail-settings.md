@@ -1,8 +1,8 @@
 ---
 title: Настройка почтовых клиентов
-description: 
+description: Imap - способ, который настоятельно рекомендуется использовать
 published: true
-date: 2020-01-06T09:25:48.628Z
+date: 2020-01-06T09:26:36.224Z
 tags: mail, mailserver, keriomailserver, kerio
 ---
 
