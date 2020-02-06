@@ -2,8 +2,8 @@
 title: Настройка Outlook
 description: Программа Outlook
 published: true
-date: 2020-02-06T10:52:01.661Z
-tags: 
+date: 2020-02-06T10:56:22.433Z
+tags: mail
 ---
 
 # Outlook
