@@ -1,8 +1,8 @@
 ---
-title: Настройка Outlook
-description: Программа Outlook
+title: Outlook
+description: Настройка Outlook
 published: true
-date: 2020-02-06T12:10:50.735Z
+date: 2020-02-06T13:21:25.330Z
 tags: mail
 ---
 
