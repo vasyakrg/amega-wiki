@@ -2,7 +2,7 @@
 title: Android
 description: Настройка
 published: true
-date: 2020-02-07T08:22:45.012Z
+date: 2020-02-07T09:49:01.629Z
 tags: mail
 ---
 
