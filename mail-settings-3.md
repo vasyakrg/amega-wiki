@@ -2,7 +2,7 @@
 title: Android
 description: Настройка
 published: true
-date: 2020-02-07T08:06:03.437Z
+date: 2020-02-07T08:22:45.012Z
 tags: mail
 ---
 
@@ -29,7 +29,7 @@ tags: mail
 ![screenshot_20200206-190630_gmail.jpg](/android/screenshot_20200206-190630_gmail.jpg =350x)
 8.В графе `Сервер` написать имя сервера - `mail.domain`,Где `domain` ваш корпоративный домен. например mail.gkamega.com
 ![screenshot_20200206-190706_gmail.jpg](/android/screenshot_20200206-190706_gmail.jpg =350x)
-9.Принять Удаленное управление безопасностью - `нажать на OK`
+9.Принять Удаленное управление безопасностью - `нажать на Предоставить`
 ![screenshot_20200206-190717_gmail.jpg](/android/screenshot_20200206-190717_gmail.jpg =250x)
 10.`Включить` Активацию приложения администратором.
 ![screenshot_20200206-190724_settings.jpg](/android/screenshot_20200206-190724_settings.jpg =250x)
