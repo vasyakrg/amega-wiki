@@ -2,26 +2,26 @@
 title: Android
 description: Настройка
 published: true
-date: 2020-02-07T07:12:05.241Z
+date: 2020-02-07T08:00:50.592Z
 tags: mail
 ---
 
  # Android
 
 1.Зайти в `настройки`.
-![screenshot_20200206-190536_one_ui_home.jpg](/android/screenshot_20200206-190536_one_ui_home.jpg)
+![screenshot_20200206-190536_one_ui_home.jpg](/android/screenshot_20200206-190536_one_ui_home.jpg =250x)
 
 2.Выберите пункт меню `Учетные записи и архивация`
-![screenshot_20200206-190545_settings.jpg](/android/screenshot_20200206-190545_settings.jpg)
+![screenshot_20200206-190545_settings.jpg](/android/screenshot_20200206-190545_settings.jpg =250x)
 
 3.Выберите пункт меню `Учетные записи`
-![screenshot_20200206-190553_settings.jpg](/android/screenshot_20200206-190553_settings.jpg)
+![screenshot_20200206-190553_settings.jpg](/android/screenshot_20200206-190553_settings.jpg =250x)
 
 4.Нажать на `Добавить аккаунт`
-![screenshot_20200206-190559_settings.jpg](/android/screenshot_20200206-190559_settings.jpg)
+![screenshot_20200206-190559_settings.jpg](/android/screenshot_20200206-190559_settings.jpg =250x)
 
 5.Нажать на `Exchange`
-![screenshot_20200206-190604_settings.jpg](/android/screenshot_20200206-190604_settings.jpg)
+![screenshot_20200206-190604_settings.jpg](/android/screenshot_20200206-190604_settings.jpg =250x)
 
 6.Написать полный адрес Вашего электронного ящика и нажать `Далее`
 7.Ввести пароль от электронного почтового ящика и подождать пока Android получит информацию
