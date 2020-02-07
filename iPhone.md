@@ -2,7 +2,7 @@
 title: iPhone
 description: Настройка
 published: true
-date: 2020-02-07T11:55:06.536Z
+date: 2020-02-07T11:56:29.721Z
 tags: mail
 ---
 
