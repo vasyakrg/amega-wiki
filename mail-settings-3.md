@@ -2,7 +2,7 @@
 title: Android
 description: Настройка
 published: true
-date: 2020-02-07T08:01:44.261Z
+date: 2020-02-07T08:06:03.437Z
 tags: mail
 ---
 
@@ -24,11 +24,15 @@ tags: mail
 ![screenshot_20200206-190604_settings.jpg](/android/screenshot_20200206-190604_settings.jpg =350x)
 
 6.Написать полный адрес Вашего электронного ящика и нажать `Далее`
+![screenshot_20200206-190610_gmail.jpg](/android/screenshot_20200206-190610_gmail.jpg =350x)
 7.Ввести пароль от электронного почтового ящика и подождать пока Android получит информацию
+![screenshot_20200206-190630_gmail.jpg](/android/screenshot_20200206-190630_gmail.jpg =350x)
 8.В графе `Сервер` написать имя сервера - `mail.domain`,Где `domain` ваш корпоративный домен. например mail.gkamega.com
+![screenshot_20200206-190706_gmail.jpg](/android/screenshot_20200206-190706_gmail.jpg =350x)
 9.Принять Удаленное управление безопасностью - `нажать на OK`
+![screenshot_20200206-190717_gmail.jpg](/android/screenshot_20200206-190717_gmail.jpg =250x)
 10.`Включить` Активацию приложения администратором.
-11.`Активировать` удаленное управление Android.
+![screenshot_20200206-190724_settings.jpg](/android/screenshot_20200206-190724_settings.jpg =250x)
 12.Приступить к работе с аккаунтом
 
 
