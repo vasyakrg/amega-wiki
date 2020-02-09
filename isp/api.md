@@ -2,8 +2,8 @@
 title: Методы для работы с API
 description: записная книжка по с API на ISPManager Business
 published: true
-date: 2020-02-09T10:06:26.080Z
-tags: ispmanager, ispmgr, api, domain
+date: 2020-02-09T10:06:50.612Z
+tags: k8s, ispmanager, ispmgr, api, domain, docker, ingress
 ---
 
 # Вводная
