@@ -2,7 +2,7 @@
 title: Подавление DHCP серверов
 description: Подавляем сторонние DHCP сервера  в нашей сети
 published: true
-date: 2020-02-09T10:00:46.717Z
+date: 2020-02-09T10:04:42.348Z
 tags: 
 ---
 
@@ -13,6 +13,7 @@ tags:
 [dhcdrop-win32-0.5.zip](/подавление-dhcp/dhcdrop-win32-0.5.zip)
 [dhcdrop-lin-0.5.tar.bz2](/подавление-dhcp/dhcdrop-lin-0.5.tar.bz2)
 [dhcdrop-0.5.tar.bz2](/подавление-dhcp/dhcdrop-0.5.tar.bz2)
+
 > Предисловие
 {.is-info}
 
