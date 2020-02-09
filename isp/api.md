@@ -2,7 +2,7 @@
 title: Методы для работы с API
 description: записная книжка по с API на ISPManager Business
 published: true
-date: 2020-02-09T09:40:15.231Z
+date: 2020-02-09T09:45:54.431Z
 tags: ispmanager, ispmgr, api, domain
 ---
 
@@ -114,7 +114,7 @@ curl -ks "https://${DNS_SERVER}/ispmgr?authinfo=${DNS_LOGIN}:${DNS_PASSWORD}&out
 
 передаваемые переменные, думаю, комментировать смысла не имеет
 
-проект лежит [тут](), буду благодарен за идеи его улучшения через MR
+проект лежит [тут](https://github.com/vasyakrg/ispmgr-api), буду благодарен за идеи его улучшения через MR
 
 ##### Автор
  - **Vassiliy Yegorov** - *Initial work* - [vasyakrg](https://github.com/vasyakrg)
