@@ -2,7 +2,7 @@
 title: Методы для работы с API
 description: записная книжка по с API на ISPManager Business
 published: true
-date: 2020-02-09T09:32:51.899Z
+date: 2020-02-09T09:35:01.265Z
 tags: ispmanager, ispmgr, api, domain
 ---
 
@@ -93,8 +93,21 @@ spec:
 соответственно, передаем `DNS_API_COMMAND`, которая принимает вид `create` или `delete`, а так же `все` переменные, по примеру запуска таска в контейнере.
 
 я обычно использую две такие джобы, которые создают две записи по айпишникам `LB_IP1` и `LB_IP2`, которые смотря на две ноды нашего кластера
-а при удалении сервиса, запускаю две новые джобы с переменной DNS_API_COMMAND=delete, что бы не плодить в домене куча мертвых записей.
+а при удалении деплоймента, запускаю две новые джобы с переменной `DNS_API_COMMAND=delete`, что бы не плодить в домене кучу мертвых записей.
 
 проверить, что джоба на удаление отработалась можно простым методом ожидания
+```
 kubectl -n ${NS} wait --for=condition=complete --timeout=600s jobs/ispmgr-dns-job-lb1
+```
 после чего можно удалять весь деплой, либо же весь неймспейс полностью.
+
+# Сами методы
+создать запись:
+```
+curl -ks "https://${DNS_SERVER}/ispmgr?authinfo=${DNS_LOGIN}:${DNS_PASSWORD}&out=sjson&sok=ok&func=domain.record.edit&plid=${DOMAIN_NAME}&ip=${DNS_SETIP}&name=${DNS_SETNAME}&rtype=a&ttl=3600"
+```
+
+удалить запись:
+```
+curl -ks "https://${DNS_SERVER}/ispmgr?authinfo=${DNS_LOGIN}:${DNS_PASSWORD}&out=sjson&sok=ok&func=domain.record.delete&plid=${DOMAIN_NAME}&elid=${DNS_SETNAME}.${DOMAIN_NAME}.%20A%20%20${DNS_SETIP}"
+```
