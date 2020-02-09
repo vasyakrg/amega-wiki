@@ -2,7 +2,7 @@
 title: Методы для работы с API
 description: записная книжка по с API на ISPManager Business
 published: true
-date: 2020-02-09T10:01:22.590Z
+date: 2020-02-09T10:06:26.080Z
 tags: ispmanager, ispmgr, api, domain
 ---
 
@@ -117,7 +117,7 @@ kubectl -n ${NS} wait --for=condition=complete --timeout=600s jobs/ispmgr-dns-jo
 ```
 после чего можно удалять весь деплой, либо же весь неймспейс полностью.
 
-# Сами методы
+# Сами методы API в панели
 создать запись:
 ```
 curl -ks "https://${DNS_SERVER}/ispmgr?authinfo=${DNS_LOGIN}:${DNS_PASSWORD}&out=sjson&sok=ok&func=domain.record.edit&plid=${DOMAIN_NAME}&ip=${DNS_SETIP}&name=${DNS_SETNAME}&rtype=a&ttl=3600"
@@ -131,6 +131,8 @@ curl -ks "https://${DNS_SERVER}/ispmgr?authinfo=${DNS_LOGIN}:${DNS_PASSWORD}&out
 передаваемые переменные, думаю, комментировать смысла не имеет
 
 проект лежит [тут](https://github.com/vasyakrg/ispmgr-api), буду благодарен за идеи его улучшения через MR
+
+на вопрос "зачем было оборачивать две curl-запроса в докер" отвечаю: далее буду раширять скрипты в контейнере, что бы работать и с другими методами из API ISPManager
 
 ##### Автор
  - **Vassiliy Yegorov** - *Initial work* - [vasyakrg](https://github.com/vasyakrg)
