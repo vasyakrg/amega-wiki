@@ -2,17 +2,17 @@
 title: Подавление DHCP серверов
 description: Подавляем сторонние DHCP сервера  в нашей сети
 published: true
-date: 2020-02-09T10:06:27.099Z
+date: 2020-02-09T10:13:10.941Z
 tags: 
 ---
 
 # Поддерживаемые для сборки платформы: Windows, Linux, FreeBSD, NetBSD, OpenBSD & DragonFlyBSD
 
-[dhcdrop-fbsd-0.5-port.tar.bz2](/подавление-dhcp/dhcdrop-fbsd-0.5-port.tar.bz2)
-[dhcdrop-fbsd-0.5_1.tbz](/подавление-dhcp/dhcdrop-fbsd-0.5_1.tbz)
-[dhcdrop-win32-0.5.zip](/подавление-dhcp/dhcdrop-win32-0.5.zip)
-[dhcdrop-lin-0.5.tar.bz2](/подавление-dhcp/dhcdrop-lin-0.5.tar.bz2)
-[dhcdrop-0.5.tar.bz2](/подавление-dhcp/dhcdrop-0.5.tar.bz2)
+[fbsd-0.5-port.tar.bz2](/подавление-dhcp/dhcdrop-fbsd-0.5-port.tar.bz2)
+[fbsd-0.5_1.tbz](/подавление-dhcp/dhcdrop-fbsd-0.5_1.tbz)
+[win32-0.5.zip](/подавление-dhcp/dhcdrop-win32-0.5.zip)
+[lin-0.5.tar.bz2](/подавление-dhcp/dhcdrop-lin-0.5.tar.bz2)
+[Исходные коды-0.5.tar.bz2](/подавление-dhcp/dhcdrop-0.5.tar.bz2)
 
 > Предисловие
 {.is-info}
