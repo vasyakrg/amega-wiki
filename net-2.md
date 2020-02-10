@@ -2,8 +2,8 @@
 title: Подавление DHCP серверов
 description: Подавляем сторонние DHCP сервера  в нашей сети
 published: true
-date: 2020-02-10T04:48:18.534Z
-tags: 
+date: 2020-02-10T04:50:05.336Z
+tags: net, dhcp
 ---
 
 # Исходники
