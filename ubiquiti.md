@@ -2,7 +2,7 @@
 title: Ubiquiti - починка cloudkey
 description: Как починить cloudkey в связке с роутером и прописать правильные хосты
 published: true
-date: 2020-03-13T09:43:31.309Z
+date: 2020-03-13T09:44:19.964Z
 tags: cloudkey, ubiquiti
 ---
 
@@ -84,6 +84,8 @@ tags: cloudkey, ubiquiti
 
 после чего идем в SSH и крутим настройки для выхода окна ввода ваучера
 
+
+# Настройка SSH
 
 командная строка
 ssh admin@192.168.150.1
