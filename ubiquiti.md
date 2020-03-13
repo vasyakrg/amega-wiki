@@ -2,7 +2,7 @@
 title: Ubiquiti - починка cloudkey
 description: Как починить cloudkey в связке с роутером и прописать правильные хосты
 published: true
-date: 2020-03-13T09:42:27.976Z
+date: 2020-03-13T09:43:31.309Z
 tags: cloudkey, ubiquiti
 ---
 
@@ -39,7 +39,7 @@ tags: cloudkey, ubiquiti
 
 # Cloud key ![keyy.png](/keyy.png)
 
-##  Он запитан через POE блок ![poe.png](/poe.png)
+ Он запитан через POE блок ![poe.png](/poe.png)
 
 Глава 3
 ---
@@ -77,6 +77,7 @@ tags: cloudkey, ubiquiti
 Заходим на шлюз. Заполняем поля WAN с файлика
 ![wan_с_файлика.png](/wan_с_файлика.png)
 
+# Настройка WAN
  убираем DHCP во вкладке LAN прописываем сеть 150.1 
 Подключаем Шлюз и cloud key обратно в систему. 
 Ждем пока всё поднимается. после того всё поднимется проверяем в 150.9 в менеджере. 
