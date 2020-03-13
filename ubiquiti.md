@@ -2,11 +2,11 @@
 title: Ubiquiti - починка cloudkey
 description: Как починить cloudkey в связке с роутером и прописать правильные хосты
 published: true
-date: 2020-03-13T09:47:06.433Z
+date: 2020-03-13T09:47:47.870Z
 tags: cloudkey, ubiquiti
 ---
 
-Глава 1.                     
+# Глава 1.                     
 ---
 
                                          Болезнь
@@ -18,7 +18,7 @@ tags: cloudkey, ubiquiti
 
 
 
-Глава 2.                     
+# Глава 2.                     
 ---
 
                                           Осмотр
@@ -28,7 +28,7 @@ tags: cloudkey, ubiquiti
 Видим за первым шкафом 
 
 
-# Шлюз ![шлюз.png](/шлюз.png)
+###  Шлюз ![шлюз.png](/шлюз.png)
 
 
                                         и
@@ -36,7 +36,7 @@ tags: cloudkey, ubiquiti
 
 
 
-# Cloud key ![keyy.png](/keyy.png)
+###  Cloud key ![keyy.png](/keyy.png)
 
  Он запитан через POE блок ![poe.png](/poe.png)
 
