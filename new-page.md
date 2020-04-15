@@ -2,7 +2,7 @@
 title: Установка Zabbix-agent (windows)
 description: Установка zabbix-agenta
 published: true
-date: 2020-04-15T15:29:27.951Z
+date: 2020-04-15T15:38:56.158Z
 tags: 
 ---
 
@@ -30,8 +30,10 @@ tags:
 
 # Настройка Zabbix сервера 
 
-Заходим в настройки > узлы сети > создать узел связи
+> Заходим в настройки > узлы сети > создать узел связи
 {.is-info}
+
+
 
 ![2.jpg](/zabbix/2.jpg)
 
