@@ -1,8 +1,8 @@
 ---
-title: Zabbix-agent (windows)
+title: Установка Zabbix-agent (windows)
 description: Установка zabbix-agenta
 published: true
-date: 2020-04-15T15:23:04.903Z
+date: 2020-04-15T15:24:27.563Z
 tags: 
 ---
 
