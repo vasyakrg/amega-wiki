@@ -2,7 +2,7 @@
 title: Zabbix-agent (windows)
 description: Установка zabbix-agenta
 published: true
-date: 2020-04-15T15:20:59.360Z
+date: 2020-04-15T15:23:04.903Z
 tags: 
 ---
 
@@ -43,7 +43,7 @@ tags:
 
 ![3.jpg](/zabbix/3.jpg)
 
-> Если все настроено верно то значек ZBX загорится зеленый
+> Если все настроено верно то значек ZBX загорится зеленым
 {.is-info}
 
 ![4.jpg](/zabbix/4.jpg)
