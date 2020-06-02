@@ -2,7 +2,7 @@
 title: Браузеры: Safari
 description: тюнинг и фишки
 published: true
-date: 2020-06-02T02:18:12.101Z
+date: 2020-06-02T02:19:26.618Z
 tags: 
 ---
 
@@ -52,7 +52,7 @@ Eсли браузер запомнил, что вы зашли через https
 
 реально чистит страницы от мусора и рекламы
 
-> Ployglot
+> Polyglot
 {.is-success}
 
 
