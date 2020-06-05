@@ -2,7 +2,7 @@
 title: Ubiquiti - починка cloudkey
 description: Как починить cloudkey в связке с роутером и прописать правильные хосты
 published: true
-date: 2020-03-16T04:11:03.966Z
+date: 2020-06-05T04:39:38.000Z
 tags: cloudkey, ubiquiti
 ---
 
@@ -88,6 +88,6 @@ pass `Tp9JACMvTeaCgi67` (генерируется каждый раз после
 
 `cat /etc/hosts` - проверяем
 
-
+`sudo /opt/vyatta/bin/sudo-users/vyatta-op-dns-forwarding.pl --clear-cache` чистит кэш DNS
 
 
