@@ -2,8 +2,10 @@
 title: Ubiquiti - починка cloudkey
 description: Как починить cloudkey в связке с роутером и прописать правильные хосты
 published: true
-date: 2020-06-05T04:39:38.000Z
+date: 2020-12-10T07:39:37.112Z
 tags: cloudkey, ubiquiti
+editor: markdown
+dateCreated: 2020-03-08T03:40:49.789Z
 ---
 
 # Болезнь
@@ -66,6 +68,7 @@ https://www.ui.com/download/unifi
 ![wan_с_файлика.png](/wan_с_файлика.png)
 
 # Настройка WAN
+
 - убираем DHCP во вкладке LAN прописываем сеть 150.1 
 - Подключаем Шлюз и cloud key обратно в систему. 
 - Ждем пока всё поднимается. после того всё поднимется проверяем в 150.9 в менеджере. 
@@ -76,18 +79,40 @@ https://www.ui.com/download/unifi
 # Настройка SSH
 
 командная строка
-`ssh admin@192.168.150.1`
-pass `Tp9JACMvTeaCgi67` (генерируется каждый раз после сброса)
+`ssh admin@192.168.150.1` (логин задается каждый раз после сброса)
+pass `Tp9JACMvTeaCgi67` (задается каждый раз после сброса)
 `cat /etc/hosts` - посмотреть файл
 `sudo vi /etc/hosts` - открывает файл в редакторе vi (гореть им в аду)
 
 чтобы перейти в режим редактирования жмем `i`
-прописываем необходимые данные, например `192.168.150.9	wifi.iqwork.me`
+прописываем необходимые данные, например `192.168.150.9	wifi.iqwork.me wifi.iqwork.kz`
 для завершения редактирования жмем `ESC`
-команда `:w` - записать в файл, `:wq` - записать и выйти,  `:q!` - выйти
+команды в редакторе:
+`:w` - записать в файл 
+`:wq` - записать и выйти
+`:q!` - выйти, без сохранения
 
-`cat /etc/hosts` - проверяем
+`cat /etc/hosts` - проверяем, выводит на эран содержимое
 
 `sudo /opt/vyatta/bin/sudo-users/vyatta-op-dns-forwarding.pl --clear-cache` чистит кэш DNS
 
+# Настройка сертификата для гостевого портала
+
+Нужно:
+- получить сам серт у Васи (три файла: crt, key, ca)
+- иметь доступ на сам ssh у клауда (150.9)
+
+Делаем:
+- идем на ssh login@ip_cloud
+- ставим редактор nano, что бы не иметь секас с vi:
+	- качаем редактор `wget http://ftp.us.debian.org/debian/pool/main/n/nano/nano-tiny_2.2.6-3_armhf.deb`
+  - ставим `dpkg -i nano-tiny_2.2.6-3_armhf.deb`
+- `nano crt` - создает файл crt, туда помещаем содержимое файла crt, полученного у Васи
+- `nano key` - создает файл key, туда помещаем содержимое файла key, полученного у Васи
+- `nano ca` - создает файл ca, туда помещаем содержимое файла ca, полученного у Васи
+- запускаем сборку закрытого серта p12 из того, что создали - `sudo openssl pkcs12 -export -in crt -inkey key -out cloudkey.p12 -name unifi -CAfile ca -caname root -password pass:aircontrolenterprise` - запускаем как есть, ничего не меняя.
+- запускаем импорт серта в хранилище сертификатов `sudo keytool -importkeystore -deststorepass aircontrolenterprise -destkeypass aircontrolenterprise -destkeystore /usr/lib/unifi/data/keystore -srckeystore cloudkey.p12 -srcstoretype PKCS12 -srcstorepass aircontrolenterprise -alias unifi`
+- задаем (восстанавливаем по сути) права на папки с сертами - `chown root:ssl-cert /etc/ssl/private/* && chmod 640 /etc/ssl/private/*`
+- перезапускает службы (долго, минуты 2-3) - `/etc/init.d/nginx restart ; /etc/init.d/unifi restart`
+- радуемся сертификату до первого сброса\обновления клауда прошивкой или софтом или до завершения срока протухания серта (дается на 1 год, первый раз выпустили 09 декабря 2020 года)
 
