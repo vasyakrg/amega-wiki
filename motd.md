@@ -2,7 +2,7 @@
 title: Динамический motd
 description: 
 published: true
-date: 2020-12-24T05:00:31.565Z
+date: 2020-12-24T05:04:45.004Z
 tags: linux, debian, motd
 editor: markdown
 dateCreated: 2020-12-24T05:00:31.565Z
@@ -84,3 +84,13 @@ echo -e $tcRESET ""
 ![ssh-motd.png](/ssh-motd.png)
 
 (C) [configuring](https://wiki.it-kb.ru/unix-linux/debian/stretch/configuring-dynamic-motd-in-debian-linux-9-stretch)
+
+6. Временное решение под Новый год
+
+```
+echo -e "   *   __       *         *      *    \n*    _|--|_  *     * /\     *         \n  \__ ('') __/ *    /\/\            * \n     (^^^^)        /_/\_\ *    *      \n  * (^^^^^^)      *  ||     *        *\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n~~ Merry Christmas & Happy New Year ~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+```
+
+На выходе получим:
+
+![ssh-motd2.jpeg](/ssh-motd2.jpeg)
