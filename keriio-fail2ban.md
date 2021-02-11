@@ -2,7 +2,7 @@
 title: Kerio Connect - советы
 description: светы и твики по настройке
 published: true
-date: 2021-02-11T07:47:44.665Z
+date: 2021-02-11T08:01:23.245Z
 tags: mailserver, kerio, connect
 editor: markdown
 dateCreated: 2021-02-11T07:47:44.665Z
@@ -21,9 +21,11 @@ enabled  = true
 port     = 25,465,587,110,995,143,993,4040,80,443
 logpath  = /store/logs/security.log
 bantime  = 14400
-findtime = 20m
+findtime = 1200
 maxretry = 5
 ```
+
+- читаем дословно: если в течение 1200 минут 5 раз сунут неверные данные, блочим на 4 часа, ублюдков.
 
 не забудьте проверить путь до лога `/store/logs/security.log`
 сверху в конфиге в переменной `ignoreip = 127.0.0.1/8` дописываем через запятую все сети и\или адреса для исключения.
