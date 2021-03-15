@@ -2,7 +2,7 @@
 title: Уведомления от ssh в telegram
 description: При входе на сервер по ssh, админу отправляется уведомление в телегу
 published: true
-date: 2021-03-15T11:19:32.654Z
+date: 2021-03-15T11:21:42.087Z
 tags: telegram, ssh, server, notify
 editor: markdown
 dateCreated: 2021-03-15T11:19:32.654Z
@@ -13,13 +13,13 @@ dateCreated: 2021-03-15T11:19:32.654Z
 - @BotFather - подскажет как работать с ботами
 - @myidbot - подскажет личный ID админа
 
-- проверить можно дернув ссылку:
 
-нужно будет указать свой id, в примере это: 999
-api token: 1111:ABC-DEF1234g
+проверить можно дернув ссылку:
+нужно будет указать свой `id`, в примере это: 999
+`api_token`: 1111:ABC-DEF1234g
 
 ```bash
-https://api.telegram.org/bot1111:ABC-DEF1234g/sendMessage?chat_id=999&text=Работает? ДА!
+https://api.telegram.org/bot1111:ABC-DEF1234g/sendMessage?chat_id=999&text=Работает?
 ```
 
 Нужно создать скрипт в папке profile.d.
