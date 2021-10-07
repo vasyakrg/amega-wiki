@@ -2,13 +2,13 @@
 title: Kerio Connect\Control - советы
 description: светы и твики по настройке
 published: true
-date: 2021-10-07T14:14:22.839Z
+date: 2021-10-07T14:15:18.460Z
 tags: mailserver, kerio, connect
 editor: markdown
 dateCreated: 2021-02-11T07:47:44.665Z
 ---
 
-# Лечит Let's сертификаты в Control
+# Лечим Let's сертификаты в Control
 
 1. активируем ssh доступ и переходим в терминал (зажимаем клавишу шифт и кликаем в разделе Состояние на подраздел Состояние системы)
 2. Переводим системный раздел в режим на запись
