@@ -2,7 +2,7 @@
 title: Rocketchat-LDAP
 description: 
 published: true
-date: 2021-10-10T03:57:42.973Z
+date: 2021-10-10T03:58:24.817Z
 tags: 
 editor: markdown
 dateCreated: 2021-10-10T03:57:42.973Z
@@ -41,35 +41,6 @@ dateCreated: 2021-10-10T03:57:42.973Z
 * Карта пользовательских данных = `{"displayName":"name", "mail":"email"}`
 * Фильтр Группы Пользователей = `(&(sAMAccountName=#{username})(memberOf=CN=#{groupName},OU=rocket,DC=domain,DC=com))`
 * LDAP Группы BaseDN = `DC=domain,DC=com`
-
-* Карта группы пользовательских данных
-```
-{
-  	"gkamega": "admin",
-  	"ecology": "user",
-	"expertus": "user",
-	"gmp": "user",
-	"npo": "user",
-	"oup": "user",
-	"domain": "user",
-	"specprom": "user",
-	"spg": "user"
-}
-```
-* Карта группы LDAP Channel
-```
-{
-  	"gkamega": "gkamega",
-  	"ecology": "ecology",
-	"expertus": "expertus",
-	"gmp": "gmp",
-	"npo": "npo",
-	"oup": "oup",
-	"domain": "domain",
-	"specprom": "specprom",
-	"spg": "spg"
-}
-```
 * Фильтр = `(objectclass=user)`
 * Область = `sub`
 * Поле поиска = `sAMAccountName`
