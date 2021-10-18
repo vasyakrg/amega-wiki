@@ -2,7 +2,7 @@
 title: Proxmox твики
 description: всяко разно про проксмокс
 published: true
-date: 2021-03-28T07:04:09.088Z
+date: 2021-10-18T00:07:51.970Z
 tags: proxmox, vm
 editor: markdown
 dateCreated: 2021-03-28T07:04:09.088Z
@@ -16,5 +16,5 @@ dateCreated: 2021-03-28T07:04:09.088Z
 
 Установка:
 ```
-wget https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.py && python3 PVEDiscordDark.py
+wget https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh && bash PVEDiscordDark.sh install
 ```
