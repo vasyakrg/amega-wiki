@@ -2,7 +2,7 @@
 title: Динамический motd
 description: 
 published: true
-date: 2020-12-24T05:04:45.004Z
+date: 2022-04-08T05:12:17.165Z
 tags: linux, debian, motd
 editor: markdown
 dateCreated: 2020-12-24T05:00:31.565Z
@@ -13,7 +13,7 @@ dateCreated: 2020-12-24T05:00:31.565Z
 > при входе по ssh или просто в консоль tty можно настроить красиво.
 {.is-success}
 
-
+## Ubuntu \ Debian
 1. Создадим в этом каталоге файл скрипта и сделаем его исполняемым:
 
 `touch /etc/update-motd.d/99-mymotd-generator && chmod a+x /etc/update-motd.d/99-mymotd-generator`
@@ -24,7 +24,18 @@ dateCreated: 2020-12-24T05:00:31.565Z
 3. Отредактируем наш скрипт:
 `nano /etc/update-motd.d/99-mymotd-generator`
 
-4. Наполним файл скрипта содержимым «по вкусу». Мой пример будет выглядеть следующим образом:
+## Centos 7\8
+1. Создадим в этом каталоге файл скрипта и сделаем его исполняемым:
+
+`touch /etc/profile.d/mymotd.sh && chmod +x /etc/profile.d/mymotd.sh`
+
+2. ставим пакет аналогичный lsb-release
+
+`yum install -y redhat-lsb-core`
+
+## Наполнение
+
+1. Наполним файл скрипта содержимым «по вкусу». Мой пример будет выглядеть следующим образом:
 
 ```bash
 #!/bin/bash
@@ -59,10 +70,10 @@ SYS_LOADS=`cat /proc/loadavg | awk '{print $1}'`
 MEMORY_USED=`free -b | grep Mem | awk '{print $3/$2 * 100.0}'`
 SWAP_USED=`free -b | grep Swap | awk '{print $3/$2 * 100.0}'`
 NUM_PROCS=`ps aux | wc -l`
-IPADDRESS=`hostname --all-ip-addresses`
+IPADDRESS=`hostname -i`
 #
 echo -e "$tcDkG ==============================================================="
-echo -e $tcLtG " Good $TIME !                                   $tcORANGE BILDME.ru"
+echo -e $tcLtG " Good $TIME !                           $tcORANGE REALMANUAL.ru"
 echo -e $tcDkG "==============================================================="
 echo -e $tcLtG " - Hostname      :$tcW `hostname -f`"
 echo -e $tcLtG " - IP Address    :$tcW $IPADDRESS"
@@ -79,13 +90,13 @@ echo -e $tcRESET ""
 #
 ```
 
-5. Получаем красиво при следующем входе в консоль:
+2. Получаем красиво при следующем входе в консоль:
 
 ![ssh-motd.png](/ssh-motd.png)
 
 (C) [configuring](https://wiki.it-kb.ru/unix-linux/debian/stretch/configuring-dynamic-motd-in-debian-linux-9-stretch)
 
-6. Временное решение под Новый год
+## Временное решение под Новый год
 
 ```
 echo -e "   *   __       *         *      *    \n*    _|--|_  *     * /\     *         \n  \__ ('') __/ *    /\/\            * \n     (^^^^)        /_/\_\ *    *      \n  * (^^^^^^)      *  ||     *        *\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n~~ Merry Christmas & Happy New Year ~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
