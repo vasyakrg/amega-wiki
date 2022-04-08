@@ -1,8 +1,8 @@
 ---
 title: Ubiquiti - починка cloudkey
 description: Как починить cloudkey в связке с роутером и прописать правильные хосты
-published: true
-date: 2020-12-10T07:56:42.811Z
+published: false
+date: 2022-04-08T06:06:28.945Z
 tags: cloudkey, ubiquiti
 editor: markdown
 dateCreated: 2020-03-08T03:40:49.789Z
