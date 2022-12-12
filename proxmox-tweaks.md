@@ -2,7 +2,7 @@
 title: Proxmox твики
 description: всяко разно про проксмокс
 published: true
-date: 2022-05-03T08:22:29.851Z
+date: 2022-12-12T13:32:54.133Z
 tags: proxmox, vm
 editor: markdown
 dateCreated: 2021-03-28T07:04:09.088Z
@@ -36,7 +36,7 @@ DPkg::Post-Invoke {"test -x /usr/lib/needrestart/apt-pinvoke && /usr/lib/needres
 ## Отправка уведомлений через mailgun
 
 ставим зависимости
-`apt-get install libsasl2-modules`
+`apt install libsasl2-modules mailutils `
 
 генерим в [mailgun](https://app.mailgun.com/app/sending/domains) отдельный почтовый ящик и через эхо прописываем настройки в файл
 `echo "smtp.eu.mailgun.org <email@domain.ru>:<password>" > /etc/postfix/sasl_passwd`
