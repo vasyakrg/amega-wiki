@@ -2,7 +2,7 @@
 title: Динамический motd
 description: 
 published: true
-date: 2022-12-09T07:01:58.806Z
+date: 2023-02-21T02:52:48.096Z
 tags: linux, debian, motd
 editor: markdown
 dateCreated: 2020-12-24T05:00:31.565Z
@@ -70,7 +70,7 @@ SYS_LOADS=`cat /proc/loadavg | awk '{print $1}'`
 MEMORY_USED=`free -b | grep Mem | awk '{print $3/$2 * 100.0}'`
 SWAP_USED=`free -b | grep Swap | awk '{print $3/$2 * 100.0}'`
 NUM_PROCS=`ps aux | wc -l`
-IPADDRESS=`ifconfig ens18 | grep 'inet' | cut -d: -f2 | awk '{print $2}'`
+IPADDRESS=`ifconfig eth0 | grep 'inet' | cut -d: -f2 | awk '{print $2}'`
 #
 echo -e "$tcDkG ==============================================================="
 echo -e $tcLtG " Good $TIME !                           $tcORANGE REALMANUAL.ru"
