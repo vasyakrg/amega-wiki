@@ -2,7 +2,7 @@
 title: HAProxy + Keepalived
 description: пример настройки двух балансеров и VIP-адреса через keepalived
 published: true
-date: 2023-03-09T06:47:35.291Z
+date: 2023-03-09T06:49:24.018Z
 tags: proxy, balancer, haproxy, keepalived
 editor: markdown
 dateCreated: 2023-03-09T06:47:35.291Z
@@ -11,7 +11,12 @@ dateCreated: 2023-03-09T06:47:35.291Z
 # HAProxy + Keepalived
 пример настройки двух балансеров и VIP-адреса через keepalived
 
-адресация:
+**общая схема**
+
+![monosnap-2023-03-09_13-47-24.jpg](/monosnap-2023-03-09_13-47-24.jpg)
+
+адресация с моего стенда:
+
 web1: 192.168.9.151
 web2: 192.168.9.152
 
