@@ -2,7 +2,7 @@
 title: Динамический motd
 description: 
 published: true
-date: 2023-02-21T02:52:48.096Z
+date: 2023-04-17T04:03:58.070Z
 tags: linux, debian, motd
 editor: markdown
 dateCreated: 2020-12-24T05:00:31.565Z
@@ -24,6 +24,9 @@ dateCreated: 2020-12-24T05:00:31.565Z
 3. Отредактируем наш скрипт:
 `nano /etc/update-motd.d/99-mymotd-generator`
 
+4. на Debian надо просадить утилиту lsb-release:
+`apt install lsb-release`
+
 ## Centos 7\8
 1. Создадим в этом каталоге файл скрипта и сделаем его исполняемым:
 
@@ -32,6 +35,12 @@ dateCreated: 2020-12-24T05:00:31.565Z
 2. ставим пакет аналогичный lsb-release
 
 `yum install -y redhat-lsb-core`
+
+## Сетевая плата
+
+Проверьте, как называется у нас основная сетевая плата и поменяйте ее в наполнении ниже:
+
+IPADDRESS=ifconfig **eth0** | grep 'inet' | cut -d: -f2 | awk '{print $2}'
 
 ## Наполнение
 
