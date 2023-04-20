@@ -2,7 +2,7 @@
 title: Proxmox твики
 description: всяко разно про проксмокс
 published: true
-date: 2022-12-12T13:32:54.133Z
+date: 2023-04-20T03:30:06.926Z
 tags: proxmox, vm
 editor: markdown
 dateCreated: 2021-03-28T07:04:09.088Z
@@ -11,6 +11,10 @@ dateCreated: 2021-03-28T07:04:09.088Z
 # Proxmox твики
 
 ## Темная тема
+
+> не актуально, т.к. завезли в 7.4 версии
+{.is-danger}
+
 
 ![2021-03-28_14.02.54.jpg](/2021-03-28_14.02.54.jpg)
 
