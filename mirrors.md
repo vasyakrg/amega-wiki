@@ -2,7 +2,7 @@
 title: Наши зеркала
 description: 
 published: true
-date: 2024-04-08T04:47:45.574Z
+date: 2024-04-08T07:39:17.076Z
 tags: mirrors
 editor: markdown
 dateCreated: 2022-09-05T15:48:26.156Z
@@ -22,5 +22,8 @@ dateCreated: 2022-09-05T15:48:26.156Z
 
 ## Grafana Labs
 
+качаешь ключ
+`wget -q -O - https://apt.amegahost.kz/apt.grafana.com/gpg.key | gpg --dearmor | tee /etc/apt/keyrings/grafana.gpg > /dev/null`
+
 добавляешь репу
-`echo "deb https://apt.amegahost.kz/apt.grafana.com/ stable main" > /etc/apt/sources.list.d/grafana.list`
+`echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.amegahost.kz/apt.grafana.com/ stable main" > /etc/apt/sources.list.d/grafana.list`
