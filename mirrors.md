@@ -2,13 +2,32 @@
 title: Наши зеркала
 description: 
 published: true
-date: 2024-04-08T07:39:17.076Z
+date: 2024-05-30T02:22:46.456Z
 tags: mirrors
 editor: markdown
 dateCreated: 2022-09-05T15:48:26.156Z
 ---
 
 # Доступные зеркала
+
+## Docker-hub
+
+🤦Since Docker is a US company, we must comply with US export control regulations.
+Доброе утро, Docker-hub 🙂
+
+```
+'docker login': denied: <html><body><h1>403 Forbidden</h1>
+```
+
+🚀 PS. Решение проблемы такое: в `/etc/docker/daemon.json` (если его нет, создаем) добавляем:
+
+```
+{
+    "registry-mirrors": ["https://mirror.gcr.io", "https://daocloud.io", "https://c.163.com/", "https://registry.docker-cn.com"]
+}
+```
+
+перезапускаем сервис: `systemctl restart docker`
 
 ## Hashicorp
 
