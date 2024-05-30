@@ -2,7 +2,7 @@
 title: Наши зеркала
 description: 
 published: true
-date: 2024-05-30T02:22:46.456Z
+date: 2024-05-30T02:31:46.839Z
 tags: mirrors
 editor: markdown
 dateCreated: 2022-09-05T15:48:26.156Z
@@ -27,7 +27,7 @@ dateCreated: 2022-09-05T15:48:26.156Z
 }
 ```
 
-перезапускаем сервис: `systemctl restart docker`
+перезапускаем сервис: `systemctl reload docker`
 
 ## Hashicorp
 
