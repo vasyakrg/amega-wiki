@@ -2,7 +2,7 @@
 title: Kerio Connect\Control - советы
 description: светы и твики по настройке
 published: true
-date: 2021-10-07T14:15:18.460Z
+date: 2024-10-11T04:12:15.864Z
 tags: mailserver, kerio, connect
 editor: markdown
 dateCreated: 2021-02-11T07:47:44.665Z
@@ -36,7 +36,7 @@ vi isrgrootx1.crt
 # Защита Connect
 Что бы предварительно защитить сервер от подбороов паролей и сканированиия по ящикам делаем:
 
-- ставим фильтр `apt install faill2ban`
+- ставим фильтр `apt install fail2ban`
 - идем в настройки `/etc/fail2ban/jail.conf`
 - ищем фильтр [kerio] и правим его вот так:
 
