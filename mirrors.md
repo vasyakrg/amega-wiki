@@ -2,7 +2,7 @@
 title: Наши зеркала
 description: 
 published: true
-date: 2024-05-30T02:31:46.839Z
+date: 2024-10-16T05:58:27.817Z
 tags: mirrors
 editor: markdown
 dateCreated: 2022-09-05T15:48:26.156Z
@@ -46,3 +46,11 @@ dateCreated: 2022-09-05T15:48:26.156Z
 
 добавляешь репу
 `echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.amegahost.kz/apt.grafana.com/ stable main" > /etc/apt/sources.list.d/grafana.list`
+
+## Elastic.co
+
+качаешь ключ
+`wget -q -O - https://apt.amegahost.kz/artifacts.elastic.co/GPG-KEY-elasticsearch | gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg > /dev/null`
+
+добавляешь репу
+`echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://apt.amegahost.kz/packages/8.x/apt stable main" > /etc/apt/sources.list.d/elasticsearch.list`
