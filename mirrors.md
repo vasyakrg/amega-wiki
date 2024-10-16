@@ -2,7 +2,7 @@
 title: Наши зеркала
 description: 
 published: true
-date: 2024-10-16T05:58:27.817Z
+date: 2024-10-16T05:59:31.118Z
 tags: mirrors
 editor: markdown
 dateCreated: 2022-09-05T15:48:26.156Z
@@ -50,7 +50,7 @@ dateCreated: 2022-09-05T15:48:26.156Z
 ## Elastic.co
 
 качаешь ключ
-`wget -q -O - https://apt.amegahost.kz/artifacts.elastic.co/GPG-KEY-elasticsearch | gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg > /dev/null`
+`wget -q -O - https://apt.amegahost.kz/artifacts.elastic.co/elasticsearch-keyring.gpg | gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg > /dev/null`
 
 добавляешь репу
 `echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://apt.amegahost.kz/packages/8.x/apt stable main" > /etc/apt/sources.list.d/elasticsearch.list`
