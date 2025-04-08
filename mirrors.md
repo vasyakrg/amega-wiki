@@ -2,13 +2,17 @@
 title: Наши зеркала
 description: 
 published: true
-date: 2024-10-16T09:57:04.035Z
+date: 2025-04-08T02:17:29.648Z
 tags: mirrors
 editor: markdown
 dateCreated: 2022-09-05T15:48:26.156Z
 ---
 
 # Доступные зеркала
+
+## ClavAV
+
+https://clamav.realmanual.ru
 
 ## Docker-hub
 
